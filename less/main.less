@@ -1,0 +1,44 @@
+@import "variables.less";
+@import "mixins.less";
+@import "css3-mixins.less";
+
+body {
+	margin:0;
+	padding:0;
+	background:url('../images/bg.png') no-repeat;
+	background-position-x:center;
+	#wrapper {
+		height:1000px;
+		width:976px;
+		margin:0 auto;
+		color:#fff;
+		#edit-panel {
+		}
+		#header {
+			border:solid 3px grey;
+			height:200px;
+		}
+		#canvas {
+			border:solid 3px lightGrey;
+			height:400px;
+			.button {
+				display:block;
+				background:@div-button-bg-color;
+				color:#fff;
+				height:40px;
+				width:300px;
+				line-height:36px;
+				text-decoration:none;
+				text-align:center;
+				.border-radius(15px);
+				&:hover {
+					background:lighten(@div-button-bg-color,10%);
+				}
+			}
+		}
+		#footer {
+			height:200px;
+			border:solid 3px grey;
+		}
+	}
+}

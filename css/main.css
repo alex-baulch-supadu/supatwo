@@ -1,0 +1,62 @@
+/* Variables */
+/*
+Variable naming convention
+
+"@element-(id/class)-cssattribute"
+
+where:
+	-> "element" is the html element to be styled eg "h1"
+	-> in the situation where using an element would be too generic please match to the class/id of the element to be styled foe example for <div id="wrapper"></div> use "@wrapper-…"
+	-> "cssattribute" is the attribute you wish to style eg "font-size"
+	-> please note the use of dashes/hyphons over under_scores or camelCasing this should be present throughout.
+*/
+/* DOM Element Colors */
+/* Gradients */
+/* Fonts */
+/* Colors */
+/* Sizes */
+/* Sprites */
+/* Local Mixins *//* CSS3 mixins */
+body {
+  margin: 0;
+  padding: 0;
+  background: url('../images/bg.png') no-repeat;
+  background-position-x: center;
+}
+body #wrapper {
+  height: 1000px;
+  width: 976px;
+  margin: 0 auto;
+  color: #fff;
+}
+body #wrapper #header {
+  border: solid 3px grey;
+  height: 200px;
+}
+body #wrapper #canvas {
+  border: solid 3px lightGrey;
+  height: 400px;
+}
+body #wrapper #canvas .button {
+  display: block;
+  background: #808080;
+  color: #fff;
+  height: 40px;
+  width: 300px;
+  line-height: 36px;
+  text-decoration: none;
+  text-align: center;
+  -webkit-border-radius: 15px;
+  -moz-border-radius: 15px;
+  border-radius: 15px;
+  -moz-background-clip: padding;
+  -webkit-background-clip: padding-box;
+  background-clip: padding-box;
+}
+body #wrapper #canvas .button:hover {
+  background: #9a9a9a;
+}
+body #wrapper #footer {
+  height: 200px;
+  border: solid 3px grey;
+}
